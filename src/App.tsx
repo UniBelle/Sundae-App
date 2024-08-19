@@ -11,7 +11,7 @@ type OrderPhase = "inProgress" | "review" | "completed";
 export default function App() {
   const [orderPhase, setOrderPhase] = useState<OrderPhase>("inProgress");
 
-  let Component: React.ElementType = OrderEntry; // default to order page
+  let Component: React.ElementType = OrderEntry; 
 
   switch (orderPhase) {
     case "inProgress":
